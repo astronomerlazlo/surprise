@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <!--META CHARSET DESCRIPTION-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Perks">
+        <meta name="Have an Answer?" content="width-device-width, intial-scale=1.0">
+        <!--Title-->
+        <title>What is your answer?</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="CSS/styles.css">
+        <!--Scripts-->
+        <script src="Scripts/scripts.js"></script>
+        <!--Fonts-->
+        <!-- Header Fonts-->
+        <!--Body Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+ </head>
+<body>
+    <header>
+        <!--Nav-->
+        <nav class="nav">
+            <div id="nav_options">
+                <a href="index.html">Home</a>
+                <a href="qualities.html">Qualities</a>
+                <a href="perks.html">Perks of Being Luis' Girlfriend</a>
+                <a href="answer.html">Have an Answer?</a>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <h2 class="FormLabel">Norma Leticia, will you be my girlfriend?</h2>
+        <form>
+            <section class="radioBtns">
+                <div id="yesClick" onmouseover="bigYES()" onmouseout="normalYes()">
+                    <label for="yes" id="YES">Yes</label>
+                    <input type="radio" id="yes" value="Yes" name="Yes">
+                    <br>
+                </div>
+                <div id="maybemouseover" onmouseover="blurry()" onmouseout="unBlur()" onclick="fadeout()">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="maybe" value="Maybe" name="Maybe">
+                    <br>
+                </div>
+                <div id="noClick" onclick="noFadeOut()" onmouseover="noBlurry()" onmouseout="noUnBlur()">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" value="No" name="No">
+                </div>
+            </section>
+            <section class="submit">
+                <input type="submit" id="submit" value="Submit">
+            </section>
+        </form>
+    </main>
+    <footer>Luis Martinez 2024</footer>
+</body>
+</html>
